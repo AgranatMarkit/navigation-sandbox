@@ -24,6 +24,13 @@
             border-radius: 10px;
         }
         
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Adds space between the links */
+            margin-top: 20px;
+        }
+        
         a {
             color: white;
             text-decoration: none;
@@ -43,8 +50,10 @@
     <div class="container">
         <h1>Welcome to index page</h1>
         <p>Click the link below to go to the demo:</p>
-        <a href="./separate-pages/start.html">zero delay html-redirect</a>
-        <a href="./separate-pages/start-with-delay.html">some delay html-redirect</a>
+        <div class="links-container">
+            <a href="./separate-pages/start.html">zero delay html-redirect</a>
+            <a href="./separate-pages/start-with-delay.html">some delay html-redirect</a>
+        </div>
     </div>
 </body>
 </html>
